@@ -85,13 +85,6 @@ class AirlineTicketApplication:
             print(f"Error occurred while fetching exchange rate: {e}")
             return None
 
-class Booking:
-    def __init__(self, passenger_name, ticket_class, number_of_tickets, total_cost):
-        self.passenger_name = passenger_name
-        self.ticket_class = ticket_class
-        self.number_of_tickets = number_of_tickets
-        self.total_cost = total_cost
-
 if __name__ == "__main__":
     app = AirlineTicketApplication()
     app.process_ticket_booking("John Doe", "Economy", 2)
